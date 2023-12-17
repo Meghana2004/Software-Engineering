@@ -1,8 +1,18 @@
 def temperature_modeling(a, b, c, time):
-temperature = a * time**2 + b * time + c
-return temperature
-a_hardcoded, b_hardcoded, c_hardcoded = 1, 2, 10
-print("Step 1: Hard-coded Variables for Weather Modeling")
-time_hardcoded = 5
-print("Temperature for hardcoded coefficients at time", time_hardcoded, "ho
-print("\n")
+    temperature = a * time**2 + b * time + c
+    return temperature
+
+def main():
+    # Hard-coded coefficients for weather modeling
+    a_hardcoded, b_hardcoded, c_hardcoded = 1, 2, 10
+    
+    print("Step 1: Hard-coded Variables for Weather Modeling")
+    
+    time_hardcoded = 5
+
+    temperature = temperature_modeling(a_hardcoded, b_hardcoded, c_hardcoded, time_hardcoded)
+
+    print("Temperature for hardcoded coefficients at time", time_hardcoded, "hours:", temperature)
+    
+if __name__ == "__main__":
+    main()
