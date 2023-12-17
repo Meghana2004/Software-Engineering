@@ -1,0 +1,12 @@
+def temperature_modeling(a, b, c, time): 
+    temperature = a * time**2 + b * time + c 
+    return temperature 
+
+print("Step 1: User Input for Weather Modeling") 
+coefficients = input("Enter coefficients (a, b, c) separated by spaces: ")
+a_user, b_user, c_user = map(float, coefficients.split())
+time_user = float(input("Enter time in hours: ")) 
+
+result = temperature_modeling(a_user, b_user, c_user, time_user)
+print("Temperature for user-input coefficients at time", time_user, "hours:", result)
+print("\n")
